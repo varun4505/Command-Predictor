@@ -1,6 +1,6 @@
 # AI Terminal Command Predictor
 
-An intelligent system that analyzes your terminal command history and predicts the next commands you should run to continue your workflow.
+An intelligent system that analyzes your terminal command history and predicts the next commands you should run to continue your workflow. Built with Python and Powered by Llamma 3.
 
 ## 🚀 Quick Start
 
@@ -33,6 +33,30 @@ run.bat                     # Easy start
 python main.py              # Direct run
 ```
 
+## 🔧 Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- Groq API key (free at [groq.com](https://groq.com/))
+
+### Setup
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/varun4505/Command-Predictor.git
+   cd Command-Predictor
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set up your API key:**
+   ```bash
+   cp .env.example .env
+   # Edit .env and add your Groq API key
+   ```
+
 ## 🎯 Features
 
 - **Command History Capture**: Automatically captures your last 5 terminal commands
@@ -45,14 +69,26 @@ python main.py              # Direct run
 
 ```
 AI Agent/
-├── main.py              # Main application entry point
-├── ai_agents.py         # AI agent implementations (Primary & Secondary)
-├── history_capture.py   # Terminal history capture logic
-├── utils.py            # Configuration and output management
-├── config.json         # Agent configuration settings
-├── .env               # API keys and environment variables
-├── requirements.txt   # Python dependencies
-└── outputs/          # Analysis results (auto-created)
+├── main.py                  # Main application entry point
+├── run.bat                  # Windows launcher script
+├── run.sh                   # Linux/macOS launcher script
+├── requirements.txt         # Python dependencies
+├── .env                     # Environment variables (API keys)
+├── .env.example             # Environment template
+├── .gitignore              # Git ignore patterns
+├── LICENSE                 # MIT License
+├── 
+├── src/                    # Core modules
+│   ├── __init__.py         # Package initialization
+│   ├── ai_agents.py        # AI agent implementations
+│   ├── history_capture.py  # Terminal history capture
+│   └── utils.py            # Configuration and utilities
+├── 
+├── config/                 # Configuration files
+│   └── config.json         # AI agent settings
+└── 
+└── outputs/                # Analysis results (auto-created)
+    └── analysis_*.json     # Prediction outputs
 ```
 
 ## ⚙️ Configuration
@@ -107,12 +143,19 @@ npm test
 NEXT_COMMANDS_END
 ```
 
-## 🆓 Free API Usage
+## 🤝 Contributing
 
-- **Groq**: 1000 requests/day (recommended)
-- **HuggingFace**: Unlimited local models (slower)
-- **Ollama**: Unlimited local models (requires installation)
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ## 📄 License
 
-Open source project - feel free to modify and use!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Groq](https://groq.com/)
+- Python community for excellent libraries
+- Open source contributors
+
+---
+
