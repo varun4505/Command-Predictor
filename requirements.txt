@@ -1,0 +1,9 @@
+# Core dependencies for AI Terminal Command Analyzer
+groq>=0.4.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+psutil>=5.9.0
+
+# Optional: For local AI models (if not using Groq)
+# transformers>=4.30.0
+# torch>=2.0.0

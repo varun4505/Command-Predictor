@@ -1,0 +1,26 @@
+{
+  "primary_agent": {
+    "model_type": "groq",
+    "model_name": "llama3-8b-8192",
+    "max_tokens": 400,
+    "temperature": 0.7,
+    "system_prompt": "You are a command summarization expert. Analyze terminal commands and create concise, informative summaries that highlight the user's workflow and intentions."
+  },
+  "secondary_agent": {
+    "model_type": "groq",
+    "model_name": "llama3-70b-8192",
+    "max_tokens": 400,
+    "temperature": 0.6,
+    "system_prompt": "You are an intelligent command predictor. You will receive a workflow summary from a primary agent along with original command context. Based on this summary and command history, predict the most likely next commands the user should run to continue their workflow. IMPORTANT: Provide complete, executable commands with actual filenames, paths, and parameters - NO placeholders like <filename>, [option], or {variable}. Commands must be ready to use directly in the terminal."
+  },
+  "history": {
+    "max_commands": 5,
+    "ignore_patterns": ["ls", "pwd", "clear", "history", "cd", "exit", "python main.py", "python3 main.py", "./run.bat", "./run.sh", "run.bat", "run.sh"],
+    "include_timestamps": true
+  },
+  "output": {
+    "save_to_file": true,
+    "output_directory": "./outputs",
+    "include_raw_commands": false
+  }
+}
