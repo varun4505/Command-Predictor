@@ -1,7 +1,3 @@
-# AI Terminal Command Predictor
-
-An intelligent system that analyzes your terminal command history and predicts the next commands you should run to continue your workflow. Built with Python and Powered by Llamma 3.
-
 ## 🚀 Quick Start
 
 ### Linux/macOS
@@ -64,32 +60,6 @@ python main.py              # Direct run
 - **Workflow Understanding**: Analyzes patterns in your command usage to suggest next steps
 - **Cross-Platform**: Works on Windows, macOS, and Linux
 - **Easy Command Extraction**: Clear demarcation for extracting predicted commands
-
-## 📁 Project Structure
-
-```
-AI Agent/
-├── main.py                  # Main application entry point
-├── run.bat                  # Windows launcher script
-├── run.sh                   # Linux/macOS launcher script
-├── requirements.txt         # Python dependencies
-├── .env                     # Environment variables (API keys)
-├── .env.example             # Environment template
-├── .gitignore              # Git ignore patterns
-├── LICENSE                 # MIT License
-├── 
-├── src/                    # Core modules
-│   ├── __init__.py         # Package initialization
-│   ├── ai_agents.py        # AI agent implementations
-│   ├── history_capture.py  # Terminal history capture
-│   └── utils.py            # Configuration and utilities
-├── 
-├── config/                 # Configuration files
-│   └── config.json         # AI agent settings
-└── 
-└── outputs/                # Analysis results (auto-created)
-    └── analysis_*.json     # Prediction outputs
-```
 
 ## ⚙️ Configuration
 
